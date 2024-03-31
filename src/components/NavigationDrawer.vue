@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer expand-on-hover rail>
+  <v-navigation-drawer expand-on-hover rail width="300">
     <v-list>
       <v-list-item
         prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
@@ -11,18 +11,17 @@
     <v-divider></v-divider>
 
     <v-list density="compact" nav>
-      <v-list-item>
-        <router-link to="/about">Home </router-link>
-      </v-list-item>
       <v-list-item
         prepend-icon="mdi-github"
         title="Github"
         value="github"
+        href="https://github.com/TommyEvertsen"
       ></v-list-item>
       <v-list-item
         prepend-icon="mdi-linkedin"
         title="LinkedIn"
         value="linkedIn"
+        href="https://www.linkedin.com/in/tommy-evertsen/"
       ></v-list-item>
       <v-list-item
         prepend-icon="mdi-certificate-outline"

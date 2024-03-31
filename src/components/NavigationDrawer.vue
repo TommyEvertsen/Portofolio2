@@ -1,9 +1,9 @@
 <template>
-  <v-navigation-drawer expand-on-hover rail width="300">
+  <v-navigation-drawer expand-on-hover rail width="230">
     <v-list>
       <v-list-item
         prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
-        subtitle="tommyevertsen52@gmail.com"
+        subtitle="Fullstack developer"
         title="Tommy Evertsen"
       ></v-list-item>
     </v-list>
@@ -27,6 +27,7 @@
         prepend-icon="mdi-certificate-outline"
         title="Certificates"
         value="certificates"
+        @click="navigateToCertificates"
       ></v-list-item>
       <v-list-item
         prepend-icon="mdi-controller"
@@ -41,6 +42,10 @@
 import { useRouter } from "vue-router";
 
 const router = useRouter();
+
+const navigateToCertificates = () => {
+  router.push({ name: "certificates" });
+};
 </script>
 
 <style></style>

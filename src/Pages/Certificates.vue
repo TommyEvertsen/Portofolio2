@@ -1,7 +1,10 @@
 <template>
   <main>
     <v-container>
-      <v-row no-gutters>
+      <h1 style="text-align: center; font-family: 'Merriweather', serif">
+        Certificates
+      </h1>
+      <v-row class="px-10 mt-10">
         <v-col
           v-for="(certificate, index) in certificates"
           :key="certificate.title"
@@ -76,7 +79,10 @@
                 </template>
 
                 <v-card-text class="pb-0 d-flex justify-start ga-2">
-                  <v-chip v-for="skill in certificate.skills"
+                  <v-chip
+                    v-for="skill in certificate.skills"
+                    :style="{ backgroundColor: skill.color }"
+                    color="white"
                     >{{ skill.title }}
                   </v-chip>
                 </v-card-text>
@@ -114,9 +120,11 @@ const certificates = [
     skills: [
       {
         title: "Azure",
+        color: "#008ad7",
       },
       {
         title: "C#",
+        color: "#9f73d9",
       },
     ],
   },
@@ -130,6 +138,7 @@ const certificates = [
     skills: [
       {
         title: "Azure",
+        color: "#008ad7",
       },
     ],
   },
@@ -143,6 +152,7 @@ const certificates = [
     skills: [
       {
         title: "C#",
+        color: "#9f73d9",
       },
     ],
   },
@@ -156,12 +166,15 @@ const certificates = [
     skills: [
       {
         title: "Javascript",
+        color: "#f7df1e",
       },
       {
         title: "Node.Js",
+        color: "#80bd00",
       },
       {
         title: "React.Js",
+        color: "#61dafb",
       },
     ],
   },
@@ -175,12 +188,15 @@ const certificates = [
     skills: [
       {
         title: "JavaScript",
+        color: "#f7df1e",
       },
       {
         title: "HTML",
+        color: "#f1672b",
       },
       {
         title: "CSS",
+        color: "#214ce5",
       },
     ],
   },
@@ -194,12 +210,15 @@ const certificates = [
     skills: [
       {
         title: "JavaScript",
+        color: "#f7df1e",
       },
       {
         title: "HTML",
+        color: "#f1672b",
       },
       {
         title: "CSS",
+        color: "#214ce5",
       },
     ],
   },
@@ -213,12 +232,15 @@ const certificates = [
     skills: [
       {
         title: "JavaScript",
+        color: "#f7df1e",
       },
       {
         title: "HTML",
+        color: "#f1672b",
       },
       {
         title: "CSS",
+        color: "#214ce5",
       },
     ],
   },

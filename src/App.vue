@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <NavigationDrawer />
-    <v-main>
+    <v-main style="background-color: #fff5ee">
       <RouterView />
     </v-main>
   </v-app>

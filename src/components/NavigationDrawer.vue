@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer expand-on-hover rail width="220">
+  <v-navigation-drawer width="220">
     <v-list>
       <v-list-item
         prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
@@ -55,6 +55,7 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+import { ref, provide } from "vue";
 
 const router = useRouter();
 
@@ -71,4 +72,8 @@ const navigateToHome = () => {
 };
 </script>
 
-<style></style>
+<style>
+.v-navigation-drawer{
+  transform: none;
+}
+</style>

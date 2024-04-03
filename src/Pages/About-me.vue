@@ -54,6 +54,4 @@
   </v-container>
 </template>
 
-<script setup>
-const pageTitle = "About me";
-</script>
+<script setup></script>

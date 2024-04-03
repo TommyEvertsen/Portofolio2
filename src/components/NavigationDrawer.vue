@@ -1,5 +1,5 @@
 <template>
-  <v-navigation-drawer width="220">
+  <v-navigation-drawer width="220" color="black">
     <v-list>
       <v-list-item
         prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg"
@@ -33,6 +33,7 @@
         prepend-icon="mdi-gamepad-square-outline"
         title="Video games"
         value="games"
+        @click="navigateToGames"
       ></v-list-item>
 
       <v-divider></v-divider>
@@ -73,6 +74,11 @@ const navigateToAboutMe = () => {
 const navigateToHome = () => {
   router.push({ name: "home" });
   emit("title", "Home");
+};
+
+const navigateToGames = () => {
+  router.push({ name: "video-games" });
+  emit("title", "Video Games");
 };
 </script>
 

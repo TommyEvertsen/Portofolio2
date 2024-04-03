@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar :elevation="1">
+  <v-app-bar :elevation="1" color="#1A237E">
     <template v-slot:prepend>
       <v-app-bar-nav-icon @click="show"></v-app-bar-nav-icon>
     </template>
@@ -26,3 +26,10 @@ const updateTitle = (newTitle) => {
   title.value = newTitle;
 };
 </script>
+
+<style>
+.v-list-item--active {
+  background-color: #1a237e;
+  opacity: 80;
+}
+</style>

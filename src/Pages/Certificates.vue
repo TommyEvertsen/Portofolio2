@@ -12,6 +12,8 @@
           sm="4"
         >
           <v-card
+            image="https://i.stack.imgur.com/kb0Zm.jpg"
+            hover
             color=""
             class="mx-auto mt-5"
             max-width="344"
@@ -52,6 +54,9 @@
 
             <v-expand-transition>
               <v-card
+                image="https://i.stack.imgur.com/kb0Zm.jpg"
+                hover
+                color=""
                 v-if="reveal[index]"
                 class="reveal"
                 style="height: 100%"

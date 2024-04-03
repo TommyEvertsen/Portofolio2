@@ -3,7 +3,7 @@
     <v-layout>
       <AppBar />
 
-      <v-main style="background-color: #fff5ee">
+      <v-main style="background-color: #eceff1">
         <RouterView />
       </v-main>
     </v-layout>
@@ -12,6 +12,4 @@
 
 <script setup>
 import { RouterView } from "vue-router";
-
-
 </script>

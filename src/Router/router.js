@@ -2,6 +2,7 @@
 import AboutMe from "@/Pages/About-me.vue";
 import Certificates from "@/Pages/Certificates.vue";
 import Home from "@/Pages/Home.vue";
+import VideoGames from "@/Pages/VideoGames.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -22,8 +23,12 @@ const router = createRouter({
       name: "certificates",
       component: Certificates,
     },
+    {
+      path: "/videogames",
+      name: "video-games",
+      component: VideoGames,
+    },
   ],
 });
-
 
 export default router;

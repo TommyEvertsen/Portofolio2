@@ -53,3 +53,7 @@
     </v-row>
   </v-container>
 </template>
+
+<script setup>
+const pageTitle = "About me";
+</script>

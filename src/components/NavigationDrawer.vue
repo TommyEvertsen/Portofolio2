@@ -55,25 +55,29 @@
 
 <script setup>
 import { useRouter } from "vue-router";
-import { ref, provide } from "vue";
+
+const emit = defineEmits(["title"]);
 
 const router = useRouter();
 
 const navigateToCertificates = () => {
   router.push({ name: "certificates" });
+  emit("title", "Certificates");
 };
 
 const navigateToAboutMe = () => {
   router.push({ name: "about" });
+  emit("title", "About me");
 };
 
 const navigateToHome = () => {
   router.push({ name: "home" });
+  emit("title", "Home");
 };
 </script>
 
 <style>
-.v-navigation-drawer{
+.v-navigation-drawer {
   transform: none;
 }
 </style>

@@ -3,7 +3,7 @@
     <v-layout>
       <AppBar />
 
-      <v-main style="background-color: #eceff1">
+      <v-main style="background-color: #ffff">
         <RouterView />
       </v-main>
     </v-layout>

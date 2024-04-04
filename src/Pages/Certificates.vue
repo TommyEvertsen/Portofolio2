@@ -12,16 +12,15 @@
           sm="4"
         >
           <v-card
-            image="https://i.stack.imgur.com/kb0Zm.jpg"
             hover
-            color=""
+            color="#f5f5f5"
             class="mx-auto mt-5"
             max-width="344"
             :subtitle="certificate.title"
             :title="certificate.provider"
           >
             <template v-slot:prepend>
-              <v-icon color="primary" :icon="certificate.icon"></v-icon>
+              <v-icon color="#1a237e" :icon="certificate.icon"></v-icon>
             </template>
             <template v-slot:append>
               <v-tooltip activator="parent" location="end"
@@ -31,7 +30,7 @@
                 v-if="certificate.link"
                 @click="openCertificateLink(certificate.link)"
                 color="success"
-                icon="mdi-file-certificate-outline"
+                icon="mdi-certificate-outline"
               >
               </v-icon>
             </template>
@@ -43,7 +42,7 @@
             <v-card-actions>
               <v-btn
                 prepend-icon="mdi-lightbulb-on-outline"
-                color="primary"
+                color="#ffd5ad"
                 size="small"
                 variant="elevated"
                 @click="toggleReveal(index)"
@@ -54,9 +53,8 @@
 
             <v-expand-transition>
               <v-card
-                image="https://i.stack.imgur.com/kb0Zm.jpg"
                 hover
-                color=""
+                color="#f5f5f5"
                 v-if="reveal[index]"
                 class="reveal"
                 style="height: 100%"
@@ -65,7 +63,7 @@
               >
                 <template v-slot:prepend>
                   <v-icon
-                    color="primary"
+                    color="#1a237e"
                     icon="mdi-lightbulb-on-outline"
                   ></v-icon>
                 </template>
@@ -78,7 +76,7 @@
                     v-if="certificate.link"
                     @click="openCertificateLink(certificate.link)"
                     color="success"
-                    icon="mdi-file-certificate-outline"
+                    icon="mdi-certificate-outline"
                   >
                   </v-icon>
                 </template>
@@ -96,7 +94,7 @@
                     prepend-icon="mdi-close-circle-outline"
                     variant="elevated"
                     size="small"
-                    color="primary"
+                    color="#ffd5ad"
                     @click="toggleReveal(index)"
                   >
                     Close

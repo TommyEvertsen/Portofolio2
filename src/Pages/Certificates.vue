@@ -1,37 +1,21 @@
 <template>
   <main>
-    <v-container>
-      <h1 style="text-align: center; font-family: 'Merriweather', serif">
+    <v-container style="">
+      <h1 style="text-align: center; font-family: 'Merriweather', serif; color: #5B8FB9;">
         Certificates
       </h1>
-      <v-row class="px-10 mt-10">
-        <v-col
-          v-for="(certificate, index) in certificates"
-          :key="certificate.title"
-          cols="12"
-          sm="4"
-        >
-          <v-card
-            hover
-            color="#f5f5f5"
-            class="mx-auto mt-5"
-            max-width="344"
-            :subtitle="certificate.title"
-            :title="certificate.provider"
-          >
+      <v-row class="px-5 mt-10">
+        <v-col v-for="(certificate, index) in certificates" :key="certificate.title" cols="12" sm="4">
+          <v-card hover color="#f5f5f5" class="mx-auto mt-5" max-width="344" :subtitle="certificate.title"
+            :title="certificate.provider">
+
             <template v-slot:prepend>
               <v-icon color="#1a237e" :icon="certificate.icon"></v-icon>
             </template>
             <template v-slot:append>
-              <v-tooltip activator="parent" location="end"
-                >View certificate</v-tooltip
-              >
-              <v-icon
-                v-if="certificate.link"
-                @click="openCertificateLink(certificate.link)"
-                color="success"
-                icon="mdi-certificate-outline"
-              >
+              <v-tooltip activator="parent" location="end">View certificate</v-tooltip>
+              <v-icon v-if="certificate.link" @click="openCertificateLink(certificate.link)" color="success"
+                icon="mdi-certificate-outline">
               </v-icon>
             </template>
 
@@ -40,63 +24,35 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn
-                prepend-icon="mdi-lightbulb-on-outline"
-                color="#ffd5ad"
-                size="small"
-                variant="elevated"
-                @click="toggleReveal(index)"
-              >
+              <v-btn prepend-icon="mdi-lightbulb-on-outline" color="#5B8FB9" size="small" variant="elevated"
+                @click="toggleReveal(index)">
                 Show skills
               </v-btn>
             </v-card-actions>
 
             <v-expand-transition>
-              <v-card
-                hover
-                color="#f5f5f5"
-                v-if="reveal[index]"
-                class="reveal"
-                style="height: 100%"
-                :title="certificate.provider"
-                subtitle="Skills learned"
-              >
+              <v-card hover color="#f5f5f5" v-if="reveal[index]" class="reveal" style="height: 100%"
+                :title="certificate.provider" subtitle="Skills learned">
                 <template v-slot:prepend>
-                  <v-icon
-                    color="#1a237e"
-                    icon="mdi-lightbulb-on-outline"
-                  ></v-icon>
+                  <v-icon color="#1a237e" icon="mdi-lightbulb-on-outline"></v-icon>
                 </template>
 
                 <template v-slot:append>
-                  <v-tooltip activator="parent" location="end"
-                    >View certificate</v-tooltip
-                  >
-                  <v-icon
-                    v-if="certificate.link"
-                    @click="openCertificateLink(certificate.link)"
-                    color="success"
-                    icon="mdi-certificate-outline"
-                  >
+                  <v-tooltip activator="parent" location="end">View certificate</v-tooltip>
+                  <v-icon v-if="certificate.link" @click="openCertificateLink(certificate.link)" color="success"
+                    icon="mdi-certificate-outline">
                   </v-icon>
                 </template>
 
                 <v-card-text class="pb-0 d-flex justify-start ga-2">
-                  <v-chip
-                    v-for="skill in certificate.skills"
-                    :style="{ backgroundColor: skill.color }"
-                    color="white"
-                    >{{ skill.title }}
+                  <v-chip v-for="skill in certificate.skills" :style="{ backgroundColor: skill.color }" color="white">{{
+          skill.title
+        }}
                   </v-chip>
                 </v-card-text>
                 <v-card-actions class="pt-0">
-                  <v-btn
-                    prepend-icon="mdi-close-circle-outline"
-                    variant="elevated"
-                    size="small"
-                    color="#ffd5ad"
-                    @click="toggleReveal(index)"
-                  >
+                  <v-btn prepend-icon="mdi-close-circle-outline" variant="elevated" size="small" color="#5B8FB9"
+                    @click="toggleReveal(index)">
                     Close
                   </v-btn>
                 </v-card-actions>

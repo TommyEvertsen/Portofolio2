@@ -1,16 +1,20 @@
 <template>
   <main>
     <v-container style="">
-      <h1 style="text-align: center; font-family: 'Merriweather', serif; color: #5B8FB9;">
+      <h1 style="text-align: center; ">
         Certificates
       </h1>
       <v-row class="px-5 mt-10">
-        <v-col v-for="(certificate, index) in certificates" :key="certificate.title" cols="12" sm="4">
-          <v-card hover color="#f5f5f5" class="mx-auto mt-5" max-width="344" :subtitle="certificate.title"
-            :title="certificate.provider">
+        <v-col v-for="(certificate, index) in certificates" :key="certificate.title" cols="12" xl="4" lg="4" md="6"
+          sm="12" xs="12">
+          <v-card rounded="lg" hover color="#f5f5f5" class="mx-auto mt-5" max-width="450" :subtitle="certificate.title"
+            :title="certificate.provider"><v-img class=" align-end text-white" height="450" :src="certificate.image"
+              cover>
+
+            </v-img>
 
             <template v-slot:prepend>
-              <v-icon color="#1a237e" :icon="certificate.icon"></v-icon>
+              <v-icon :icon="certificate.icon" color="white"></v-icon>
             </template>
             <template v-slot:append>
               <v-tooltip activator="parent" location="end">View certificate</v-tooltip>
@@ -36,6 +40,9 @@
                 <template v-slot:prepend>
                   <v-icon color="#1a237e" icon="mdi-lightbulb-on-outline"></v-icon>
                 </template>
+                <v-img class=" align-end text-white" height="450" :src="certificate.image" cover>
+
+                </v-img>
 
                 <template v-slot:append>
                   <v-tooltip activator="parent" location="end">View certificate</v-tooltip>
@@ -45,7 +52,7 @@
                 </template>
 
                 <v-card-text class="pb-0 d-flex justify-start ga-2">
-                  <v-chip v-for="skill in certificate.skills" :style="{ backgroundColor: skill.color }" color="white">{{
+                  <v-chip v-for="skill in certificate.skills" :style="{ backgroundColor: skill.color }" color="black">{{
           skill.title
         }}
                   </v-chip>
@@ -67,6 +74,11 @@
 
 <script setup>
 import { ref } from "vue";
+import fundamentals from "@/assets/fundamentals.jpg"
+import developerAccociate from "@/assets/developerAssociate.jpg"
+import mosh from "@/assets/mosh.jpg"
+import c from "@/assets/c.jpg"
+import udemy from "@/assets/udemy.jpg"
 
 const certificates = [
   {
@@ -86,6 +98,7 @@ const certificates = [
         color: "#9f73d9",
       },
     ],
+    image: developerAccociate,
   },
   {
     title: "Azure fundamentals",
@@ -93,13 +106,14 @@ const certificates = [
     icon: "mdi-microsoft",
     icon2: "mdi-check",
     subtitle: "Fundamental knowledge of Azure ",
-    link: "https://learn.microsoft.com/en-us/users/tommyevertsen-1328/credentials/f2c8e89db98ae800?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+    link: "https://learn.microsoft.com/nb-no/users/tommyevertsen-1328/credentials/certification/azure-developer?tab=credentials-tab",
     skills: [
       {
         title: "Azure",
         color: "#008ad7",
       },
     ],
+    image: fundamentals
   },
   {
     title: "Foundational C# with Microsoft",
@@ -114,6 +128,7 @@ const certificates = [
         color: "#9f73d9",
       },
     ],
+    image: c
   },
   {
     title: "Web development bootcamp",
@@ -136,6 +151,7 @@ const certificates = [
         color: "#61dafb",
       },
     ],
+    image: udemy,
   },
   {
     title: "Ultimate JavaScript mastery series",
@@ -158,6 +174,7 @@ const certificates = [
         color: "#214ce5",
       },
     ],
+    image: mosh,
   },
   {
     title: "JavaScript basics",
@@ -222,5 +239,17 @@ const openCertificateLink = (link) => {
   opacity: 1 !important;
   position: absolute !important;
   width: 100% !important;
+}
+
+.v-card-item {
+  background-color: #1A237E;
+}
+
+.v-card-title {
+  color: white;
+}
+
+.v-card-subtitle {
+  color: white;
 }
 </style>

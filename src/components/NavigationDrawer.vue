@@ -11,6 +11,8 @@
       <v-list-item prepend-icon="mdi-home-outline" title="Home" value="home" @click="navigateToHome"></v-list-item>
       <v-list-item prepend-icon="mdi-face-man-shimmer-outline" title="About me" value="about"
         @click="navigateToAboutMe"></v-list-item>
+      <v-list-item prepend-icon="mdi-application-braces-outline" title="Projects" value="projects"
+        @click="navigateToProjects"> </v-list-item>
       <v-list-item prepend-icon="mdi-certificate-outline" title="Certificates" value="certificates"
         @click="navigateToCertificates"></v-list-item>
       <v-list-item prepend-icon="mdi-gamepad-square-outline" title="Video games" value="games"
@@ -23,6 +25,7 @@
       <v-list-item prepend-icon="mdi-linkedin" title="LinkedIn" value="linkedIn"
         href="https://www.linkedin.com/in/tommy-evertsen/"></v-list-item>
     </v-list>
+
   </v-navigation-drawer>
 </template>
 
@@ -51,6 +54,11 @@ const navigateToHome = () => {
 const navigateToGames = () => {
   router.push({ name: "video-games" });
   emit("title", "Video Games");
+};
+
+const navigateToProjects = () => {
+  router.push({ name: "projects" });
+  emit("title", "Projects");
 };
 </script>
 

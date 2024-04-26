@@ -1,8 +1,7 @@
 <template>
-  <v-navigation-drawer width="220" color="black">
+  <v-navigation-drawer width="220">
     <v-list>
-      <v-list-item prepend-avatar="https://randomuser.me/api/portraits/women/85.jpg" subtitle="Fullstack developer"
-        title="Tommy Evertsen"></v-list-item>
+      <v-list-item class="me" subtitle="Fullstack developer" title="Tommy Evertsen"></v-list-item>
     </v-list>
 
     <v-divider></v-divider>
@@ -15,8 +14,8 @@
         @click="navigateToProjects"> </v-list-item>
       <v-list-item prepend-icon="mdi-certificate-outline" title="Certificates" value="certificates"
         @click="navigateToCertificates"></v-list-item>
-      <v-list-item prepend-icon="mdi-gamepad-square-outline" title="Video games" value="games"
-        @click="navigateToGames"></v-list-item>
+      <!-- <v-list-item prepend-icon="mdi-gamepad-square-outline" title="Video games" value="games"
+        @click="navigateToGames"></v-list-item> -->
 
       <v-divider></v-divider>
 

@@ -27,9 +27,4 @@ const updateTitle = (newTitle) => {
 };
 </script>
 
-<style>
-.v-list-item--active {
-  background-color: #1a237e;
-  opacity: 80;
-}
-</style>
+<style></style>

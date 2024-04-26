@@ -7,7 +7,7 @@
       <v-row class="px-5 mt-10">
         <v-col v-for="(certificate, index) in certificates" :key="certificate.title" cols="12" xl="4" lg="4" md="6"
           sm="12" xs="12">
-          <v-card rounded="lg" hover color="#f5f5f5" class="mx-auto mt-5" max-width="450" :subtitle="certificate.title"
+          <v-card rounded="lg" hover color="#f5f5f5" class="mx-auto mt-5" max-width="550" :subtitle="certificate.title"
             :title="certificate.provider"><v-img class=" align-end text-white" height="450" :src="certificate.image"
               cover>
 
@@ -79,6 +79,8 @@ import developerAccociate from "@/assets/developerAssociate.jpg"
 import mosh from "@/assets/mosh.jpg"
 import c from "@/assets/c.jpg"
 import udemy from "@/assets/udemy.jpg"
+import duke from "@/assets/images/duke.jpg"
+import ucdavis from "@/assets/images/ucdavis.jpg"
 
 const certificates = [
   {
@@ -87,7 +89,7 @@ const certificates = [
     icon: "mdi-microsoft",
     icon2: "mdi-check",
     subtitle: " Developing solutions for Azure",
-    link: "https://learn.microsoft.com/en-us/users/tommyevertsen-1328/credentials/certification/azure-developer?tab=credentials-tab",
+    link: "https://learn.microsoft.com/api/credentials/share/en-us/TommyEvertsen-1328/BB3A2F4F19B155FB?sharingId=99D48DE3DEFDE0E2",
     skills: [
       {
         title: "Azure",
@@ -106,7 +108,7 @@ const certificates = [
     icon: "mdi-microsoft",
     icon2: "mdi-check",
     subtitle: "Fundamental knowledge of Azure ",
-    link: "https://learn.microsoft.com/nb-no/users/tommyevertsen-1328/credentials/certification/azure-developer?tab=credentials-tab",
+    link: "https://learn.microsoft.com/api/credentials/share/en-us/TommyEvertsen-1328/F2C8E89DB98AE800?sharingId=99D48DE3DEFDE0E2",
     skills: [
       {
         title: "Azure",
@@ -197,6 +199,7 @@ const certificates = [
         color: "#214ce5",
       },
     ],
+    image: duke
   },
   {
     title: "Programming foundations",
@@ -219,6 +222,7 @@ const certificates = [
         color: "#214ce5",
       },
     ],
+    image: ucdavis
   },
 ];
 

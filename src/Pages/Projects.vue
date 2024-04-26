@@ -6,7 +6,7 @@
             <v-row class="pt-10">
                 <v-col v-for="project in hobbyProjects" :key="project.title" cols="12" xl="4" lg="4" md="6" sm="12"
                     xs="12">
-                    <v-card color="#f5f5f5" class="mx-auto" max-width="450" elevation="12" rounded="lg">
+                    <v-card color="#f5f5f5" class="mx-auto" max-width="550" elevation="12" rounded="lg">
                         <v-card-title style="background-color: #301E67; color: white;">{{ project.title
                             }}</v-card-title>
                         <v-img class=" align-end text-white" height="450" :src="project.image" cover>

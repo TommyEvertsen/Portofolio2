@@ -2,7 +2,7 @@
     <main>
         <v-container>
 
-            <h2 style="text-align: center;">Hobby projects</h2>
+            <h1 style="text-align: center;">Hobby projects</h1>
             <v-row class="pt-10">
                 <v-col v-for="project in hobbyProjects" :key="project.title" cols="12" xl="4" lg="4" md="6" sm="12"
                     xs="12">
@@ -79,7 +79,7 @@ const hobbyProjects = [
     },
     {
         title: "Dragon hero",
-        description: "Unity game. Recently started work on this. Its a fun hobby project",
+        description: "Unity game. Recently started work on this. Its a fun hobby project using C# and Unity",
         tech: "C# and Unity",
         published: true,
         image: dragonImage,
@@ -97,7 +97,7 @@ const hobbyProjects = [
     },
     {
         title: "Astronomy picture of the day",
-        description: "Made with API from NASA to show new pictures everyday of the universe",
+        description: "Made with API from NASA to show new pictures everyday of the universe. I would also like to add the mars rover api in the future",
         tech: "React.Js",
         published: false,
         image: universe,

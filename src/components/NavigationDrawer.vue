@@ -1,7 +1,8 @@
 <template>
   <v-navigation-drawer width="220">
     <v-list>
-      <v-list-item class="me" subtitle="Fullstack developer" title="Tommy Evertsen"></v-list-item>
+      <v-list-item prepend-avatar="@/assets/images/tommyAvatar.jpg" class="me" subtitle="Fullstack developer"
+        title="Tommy Evertsen"></v-list-item>
     </v-list>
 
     <v-divider></v-divider>
@@ -12,8 +13,11 @@
         @click="navigateToAboutMe"></v-list-item>
       <v-list-item prepend-icon="mdi-application-braces-outline" title="Projects" value="projects"
         @click="navigateToProjects"> </v-list-item>
+      <v-list-item prepend-icon="mdi-school-outline" title="Education" value="education"
+        @click="navigateToEducation"></v-list-item>
       <v-list-item prepend-icon="mdi-certificate-outline" title="Certificates" value="certificates"
         @click="navigateToCertificates"></v-list-item>
+
       <!-- <v-list-item prepend-icon="mdi-gamepad-square-outline" title="Video games" value="games"
         @click="navigateToGames"></v-list-item> -->
 
@@ -30,6 +34,7 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+
 
 const emit = defineEmits(["title"]);
 
@@ -58,6 +63,11 @@ const navigateToGames = () => {
 const navigateToProjects = () => {
   router.push({ name: "projects" });
   emit("title", "Projects");
+};
+
+const navigateToEducation = () => {
+  router.push({ name: "education" });
+  emit("title", "Education");
 };
 </script>
 

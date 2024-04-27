@@ -1,6 +1,7 @@
 //Routing
 import AboutMe from "@/Pages/About-me.vue";
 import Certificates from "@/Pages/Certificates.vue";
+import Education from "@/Pages/Education.vue";
 import Home from "@/Pages/Home.vue";
 import Projects from "@/Pages/Projects.vue";
 import VideoGames from "@/Pages/VideoGames.vue";
@@ -33,6 +34,11 @@ const router = createRouter({
       path: "/projects",
       name: "projects",
       component: Projects,
+    },
+    {
+      path: "/education",
+      name: "education",
+      component: Education,
     },
   ],
 });

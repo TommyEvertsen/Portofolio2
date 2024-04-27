@@ -1,6 +1,6 @@
 <template>
   <main>
-    <v-container style="">
+    <v-container>
       <h1 style="text-align: center; ">
         Certificates
       </h1>

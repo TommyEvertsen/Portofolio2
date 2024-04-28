@@ -1,7 +1,7 @@
 <template>
   <main>
-    <v-container>
-      <h1 style="text-align: center; ">
+    <v-container class="mt-10  mb-10">
+      <h1 style="text-align: center;  ">
         Certificates
       </h1>
       <v-row class="px-5 mt-10">
@@ -28,7 +28,7 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn prepend-icon="mdi-lightbulb-on-outline" color="#5B8FB9" size="small" variant="elevated"
+              <v-btn class="button" variant="outlined" prepend-icon="mdi-lightbulb-on-outline" color="#5B8FB9"
                 @click="toggleReveal(index)">
                 Show skills
               </v-btn>
@@ -58,7 +58,7 @@
                   </v-chip>
                 </v-card-text>
                 <v-card-actions class="pt-0">
-                  <v-btn prepend-icon="mdi-close-circle-outline" variant="elevated" size="small" color="#5B8FB9"
+                  <v-btn class="button" prepend-icon="mdi-close-circle-outline" variant="outlined" color="#5B8FB9"
                     @click="toggleReveal(index)">
                     Close
                   </v-btn>
@@ -255,5 +255,10 @@ const openCertificateLink = (link) => {
 
 .v-card-subtitle {
   color: white;
+}
+
+.button:hover {
+  background-color: #5B8FB9;
+  color: aliceblue !important;
 }
 </style>

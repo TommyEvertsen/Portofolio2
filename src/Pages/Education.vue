@@ -1,24 +1,24 @@
 <template>
     <main>
 
-        <v-container>
-            <h1 style="text-align: center;">Education</h1>
-
-            <v-row>
-
-                <v-col cols="6">
-                    <h2 class="headline">Study at University</h2>
-                    <div class="mt-10">
-                        <p>I studied professional front-end development program at the University of
+        <v-container class="px-10 mt-10  mb-10">
+            <v-row class="mt10">
+                <v-col cols="12" xl="4" lg="6" md="6" sm="12" xs="12">
+                    <h2 class="headline">Study at the University</h2>
+                    <div class=" mt-10 uni-text">
+                        <p style="font-size: large; line-height: 2em;">I studied professional front-end development
+                            program at the
+                            University of
                             California. The program
                             consisted of 5 courses with a duration of 3 months each course. This program made me really
                             understand
                             the logical aspects of programming as well as designing web pages for easy use, and how to
                             make
                             them
-                            available for people who have challenges with their eye sight and other disablilites. The
-                            students </p>
-                        <p>
+                            available for people who have challenges with their eye sight and other disablilites.</p>
+                        <br>
+                        <p style="font-size: large; line-height: 2em;"> The
+                            students
                             worked together in teams to simulate real world working environments. We made web pages
                             together
                             and
@@ -34,12 +34,10 @@
                             pages.
                         </p>
                     </div>
-
-
                 </v-col>
 
                 <v-col>
-                    <v-img :src="diploma" cols="6"> </v-img>
+                    <v-img :src="diploma"> </v-img>
                 </v-col>
             </v-row>
 
@@ -53,6 +51,15 @@ import diploma from "@/assets/images/diploma.jpg"
 
 <style>
 .headline {
-    text-align: center;
+    color: #5B8FB9;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .headline {
+        text-align: center;
+    }
+
+
 }
 </style>

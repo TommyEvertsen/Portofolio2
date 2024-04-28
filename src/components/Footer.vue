@@ -1,5 +1,5 @@
 <template>
-    <v-footer class="footer text-center d-flex flex-column" style="background-color: #5B8FB9; color: aliceblue;">
+    <v-footer class="footer text-center d-flex flex-column" style="background-color: rgb(228,228,228); color: black;">
         <div>
             <v-btn v-for="link in links" :key="link.title" :icon="link.icon" :href="link.href" @click="link.click"
                 class="mx-4" variant="text"></v-btn>
@@ -41,6 +41,9 @@ const navigateToProjects = () => {
 const navigateToEducation = () => {
     router.push({ name: "education" });
 };
+const navigateToContact = () => {
+    router.push({ name: "contact" });
+};
 
 const links = [
     {
@@ -52,6 +55,11 @@ const links = [
         title: "About",
         icon: 'mdi-face-man-shimmer-outline',
         click: navigateToAboutMe
+    },
+    {
+        title: "Contact",
+        icon: 'mdi-mailbox-up-outline',
+        click: navigateToContact
     },
     {
         title: "Projects",

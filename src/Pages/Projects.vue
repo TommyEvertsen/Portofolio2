@@ -91,16 +91,6 @@ const hobbyProjects = [
     code: "",
   },
   {
-    title: "Portofolio",
-    description:
-      "Making a portofolio for myself. Making it by using vuetify 3. A fun hobby project for sure",
-    tech: "Vue.js",
-    published: false,
-    image: portoImage,
-    link: "",
-    code: "https://github.com/TommyEvertsen/Portofolio",
-  },
-  {
     title: "Fire and flesh",
     description:
       "Website for sharing recipes. Has been taken offline due to cost. But it was a fun project where i learned a lot",
@@ -130,6 +120,16 @@ const hobbyProjects = [
     image: universe,
     link: "",
     code: "https://github.com/TommyEvertsen/Astronomy-picture-of-the-day-React.js",
+  },
+  {
+    title: "Portofolio",
+    description:
+      "Making a portofolio for myself. Making it by using vuetify 3. A fun hobby project for sure",
+    tech: "Vue.js",
+    published: false,
+    image: portoImage,
+    link: "",
+    code: "https://github.com/TommyEvertsen/Portofolio",
   },
 ];
 </script>

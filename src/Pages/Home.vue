@@ -1,19 +1,104 @@
 <template>
-  <main class="home">
+  <main>
     <v-container>
+      <v-row>
+        <v-col cols="12" xl="5" lg="5" md="12" sm="12" xs="12" class="mt-10">
+          <v-sheet>
+            <h3>Hi there i'm</h3>
+            <h1 class="mt-2">Tommy Evertsen</h1>
+            <v-divider length="300" thickness="2"> </v-divider>
+            <h2>Fullstack developer</h2>
+            <p class="mt-10" style="font-size: large; line-height: 1, 2rem">
+              I do web development and game development, i enjoy both of them
+              alot. <br />
+              <br />
+              My daytime job is fullstack developer. I have made websites and
+              apps for many diffrent clients. In my spare time i enjoy creating
+              video games in C# and Unity. I have also studied Azure and taken
+              two certifications. Azure fundamentals and Azure developer
+              associate as i believe the future is in the cloud.
+              <br />
+              <br />
+              I also like to constantly learn new technologies and enjoy
+              studying new things. I feel like learning is really fun and i
+              enjoy it alot
 
-      <h1>Hi im Tommy Evertsen</h1>
+              <br />
+              <br />
+              Please fell free to contact me if you have any questions.
+            </p>
+            <p class="mt-10" style="font-weight: bold; font-size: larger">
+              My technologies:
+            </p>
 
+            <v-chip-group column class="mt-5">
+              <v-chip
+                v-for="technology in technologies"
+                style="color: #ffff; background-color: #5b8fb9"
+                variant="outlined"
+              >
+                {{ technology.title }}
+              </v-chip>
+            </v-chip-group>
+
+            <v-btn
+              class="button mt-10"
+              variant="outlined"
+              prepend-icon="mdi-web"
+              color="#5B8FB9"
+              @click="$router.push({ name: 'contact' })"
+            >
+              Contact me</v-btn
+            >
+          </v-sheet>
+        </v-col>
+
+        <v-col cols="12" xl="7" lg="7" md="12" sm="12" xs="12">
+          <v-img :src="tommy" max-height="800" rounded="circle"> </v-img>
+        </v-col>
+      </v-row>
     </v-container>
   </main>
-
-
 </template>
 
 <script setup>
+import { useRouter } from "vue-router";
+import tommy from "@/assets/images/tommyMosq.jpg";
 
+const router = useRouter();
+
+const technologies = [
+  {
+    title: "Javascript",
+  },
+  {
+    title: "PHP",
+  },
+  {
+    title: "C#",
+  },
+  {
+    title: "Laravel",
+  },
+  {
+    title: "Vue.js",
+  },
+  {
+    title: "Unity",
+  },
+  {
+    title: "Tailwind",
+  },
+  {
+    title: "HTML",
+  },
+  {
+    title: "CSS",
+  },
+  {
+    title: "Azure",
+  },
+];
 </script>
 
-<style>
-.home {}
-</style>
+<style></style>

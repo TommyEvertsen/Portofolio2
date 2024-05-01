@@ -4,9 +4,7 @@
       <AppBar />
       <v-main style="background-color: #ffff">
         <RouterView />
-
       </v-main>
-
     </v-layout>
     <Footer />
   </v-app>
@@ -14,7 +12,7 @@
 
 <script setup>
 import { RouterView } from "vue-router";
-import { useDisplay } from 'vuetify'
+import { useDisplay } from "vuetify";
 
-const { mobile } = useDisplay()
+const { mobile } = useDisplay();
 </script>

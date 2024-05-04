@@ -1,25 +1,47 @@
 <template>
   <main>
-    <v-container class="mt-10  mb-10">
-      <h1 style="text-align: center;  ">
-        Certificates
-      </h1>
+    <v-container class="mt-10 mb-10">
+      <h1 style="text-align: center">Certificates</h1>
       <v-row class="px-5 mt-10">
-        <v-col v-for="(certificate, index) in certificates" :key="certificate.title" cols="12" xl="4" lg="4" md="6"
-          sm="12" xs="12">
-          <v-card rounded="lg" hover color="#f5f5f5" class="mx-auto mt-5" max-width="550" :subtitle="certificate.title"
-            :title="certificate.provider"><v-img class=" align-end text-white" height="450" :src="certificate.image"
-              cover>
-
+        <v-col
+          v-for="(certificate, index) in certificates"
+          :key="certificate.title"
+          cols="12"
+          xl="4"
+          lg="4"
+          md="6"
+          sm="12"
+          xs="12"
+        >
+          <v-card
+            rounded="lg"
+            hover
+            color="#f5f5f5"
+            class="mx-auto mt-5"
+            max-width="550"
+            :subtitle="certificate.title"
+            :title="certificate.provider"
+            ><v-img
+              class="align-end text-white"
+              height="450"
+              :src="certificate.image"
+              cover
+            >
             </v-img>
 
             <template v-slot:prepend>
               <v-icon :icon="certificate.icon" color="white"></v-icon>
             </template>
             <template v-slot:append>
-              <v-tooltip activator="parent" location="end">View certificate</v-tooltip>
-              <v-icon v-if="certificate.link" @click="openCertificateLink(certificate.link)" color="success"
-                icon="mdi-certificate-outline">
+              <v-tooltip activator="parent" location="end"
+                >View certificate</v-tooltip
+              >
+              <v-icon
+                v-if="certificate.link"
+                @click="openCertificateLink(certificate.link)"
+                color="success"
+                icon="mdi-certificate-outline"
+              >
               </v-icon>
             </template>
 
@@ -28,38 +50,70 @@
             </v-card-text>
 
             <v-card-actions>
-              <v-btn class="button" variant="outlined" prepend-icon="mdi-lightbulb-on-outline" color="#5B8FB9"
-                @click="toggleReveal(index)">
+              <v-btn
+                class="button"
+                variant="outlined"
+                prepend-icon="mdi-lightbulb-on-outline"
+                color="#5B8FB9"
+                @click="toggleReveal(index)"
+              >
                 Show skills
               </v-btn>
             </v-card-actions>
 
             <v-expand-transition>
-              <v-card hover color="#f5f5f5" v-if="reveal[index]" class="reveal" style="height: 100%"
-                :title="certificate.provider" subtitle="Skills learned">
+              <v-card
+                hover
+                color="#f5f5f5"
+                v-if="reveal[index]"
+                class="reveal"
+                style="height: 100%"
+                :title="certificate.provider"
+                subtitle="Skills learned"
+              >
                 <template v-slot:prepend>
-                  <v-icon color="#1a237e" icon="mdi-lightbulb-on-outline"></v-icon>
+                  <v-icon
+                    color="#1a237e"
+                    icon="mdi-lightbulb-on-outline"
+                  ></v-icon>
                 </template>
-                <v-img class=" align-end text-white" height="450" :src="certificate.image" cover>
-
+                <v-img
+                  class="align-end text-white"
+                  height="450"
+                  :src="certificate.image"
+                  cover
+                >
                 </v-img>
 
                 <template v-slot:append>
-                  <v-tooltip activator="parent" location="end">View certificate</v-tooltip>
-                  <v-icon v-if="certificate.link" @click="openCertificateLink(certificate.link)" color="success"
-                    icon="mdi-certificate-outline">
+                  <v-tooltip activator="parent" location="end"
+                    >View certificate</v-tooltip
+                  >
+                  <v-icon
+                    v-if="certificate.link"
+                    @click="openCertificateLink(certificate.link)"
+                    color="success"
+                    icon="mdi-certificate-outline"
+                  >
                   </v-icon>
                 </template>
 
                 <v-card-text class="pb-0 d-flex justify-start ga-2">
-                  <v-chip v-for="skill in certificate.skills" :style="{ backgroundColor: skill.color }" color="black">{{
-          skill.title
-        }}
+                  <v-chip
+                    v-for="skill in certificate.skills"
+                    :style="{ backgroundColor: skill.color }"
+                    color="black"
+                    >{{ skill.title }}
                   </v-chip>
                 </v-card-text>
                 <v-card-actions class="pt-0">
-                  <v-btn class="button" prepend-icon="mdi-close-circle-outline" variant="outlined" color="#5B8FB9"
-                    @click="toggleReveal(index)">
+                  <v-btn
+                    class="button mt-3"
+                    prepend-icon="mdi-close-circle-outline"
+                    variant="outlined"
+                    color="#5B8FB9"
+                    @click="toggleReveal(index)"
+                  >
                     Close
                   </v-btn>
                 </v-card-actions>
@@ -74,13 +128,13 @@
 
 <script setup>
 import { ref } from "vue";
-import fundamentals from "@/assets/fundamentals.jpg"
-import developerAccociate from "@/assets/developerAssociate.jpg"
-import mosh from "@/assets/mosh.jpg"
-import c from "@/assets/c.jpg"
-import udemy from "@/assets/udemy.jpg"
-import duke from "@/assets/images/duke.jpg"
-import ucdavis from "@/assets/images/ucdavis.jpg"
+import fundamentals from "@/assets/fundamentals.jpg";
+import developerAccociate from "@/assets/developerAssociate.jpg";
+import mosh from "@/assets/mosh.jpg";
+import c from "@/assets/c.jpg";
+import udemy from "@/assets/udemy.jpg";
+import duke from "@/assets/images/duke.jpg";
+import ucdavis from "@/assets/images/ucdavis.jpg";
 
 const certificates = [
   {
@@ -115,7 +169,7 @@ const certificates = [
         color: "#008ad7",
       },
     ],
-    image: fundamentals
+    image: fundamentals,
   },
   {
     title: "Foundational C# with Microsoft",
@@ -130,7 +184,7 @@ const certificates = [
         color: "#9f73d9",
       },
     ],
-    image: c
+    image: c,
   },
   {
     title: "Web development bootcamp",
@@ -199,7 +253,7 @@ const certificates = [
         color: "#214ce5",
       },
     ],
-    image: duke
+    image: duke,
   },
   {
     title: "Programming foundations",
@@ -222,7 +276,7 @@ const certificates = [
         color: "#214ce5",
       },
     ],
-    image: ucdavis
+    image: ucdavis,
   },
 ];
 
@@ -246,7 +300,7 @@ const openCertificateLink = (link) => {
 }
 
 .v-card-item {
-  background-color: #1A237E;
+  background-color: #1a237e;
 }
 
 .v-card-title {
@@ -258,7 +312,7 @@ const openCertificateLink = (link) => {
 }
 
 .button:hover {
-  background-color: #5B8FB9;
+  background-color: #5b8fb9;
   color: aliceblue !important;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-footer
     class="footer text-center d-flex flex-column"
-    style="background-color: rgb(228, 228, 228); color: black"
+    style="background-color: #f8f9f9; color: black"
   >
     <div>
       <v-btn
@@ -66,7 +66,7 @@ const links = [
   },
   {
     title: "Contact",
-    icon: "mdi-mailbox-up-outline",
+    icon: "mdi-email-outline",
     click: navigateToContact,
   },
   {

@@ -3,7 +3,7 @@
     <v-container class="px-10 mt-10 mb-10">
       <v-row>
         <v-col class="pa-2" cols="12" xl="5" lg="6" md="6" sm="12" xs="12">
-          <h1 class="contact">Stay in touch</h1>
+          <h1 class="contact center">Stay in touch</h1>
           <div class="mt-10">
             <p style="font-size: large; line-height: 2em">
               Good {{ time }} welcome to my contact page, feel free to contact
@@ -11,17 +11,16 @@
               If you are curious about my coding projects then visit my
               github profile, link below. If you want to visit my linkin profile
               there is link to that aswell.
-
-              <br><br>
+              <br> <br>
 
               <p>
                 Right now it's {{ time }} so i am probably {{ activity }} but i will answer as soon as i can. 
-                I wish you a pleasant {{ time }}
-              </p>
+              </p> <br>
+
+              <p> Have a good {{ time }}</p>
 
             </p>
-            <br />
-
+          
             <h2 class="mt-10">Contact information</h2>
 
             <p class="mt-10" style="font-size: large; line-height: 2em">
@@ -29,7 +28,7 @@
             </p>
 
             <p style="font-size: large; line-height: 2em">
-              Email: tommyevertsen52@gmail.com
+              Email: tommyevertsen85@gmail.com
             </p>
 
             <h3 class="mt-10">Stay in touch!</h3>
@@ -53,7 +52,9 @@
             </div>
           </div>
         </v-col>
-        <v-col class="pa-2"> </v-col>
+        <v-col class="pa-2">
+          
+        </v-col>
       </v-row>
     </v-container>
   </main>
@@ -102,4 +103,9 @@ const activity = currentActivity;
 .button:hover {
   opacity: 80%;
 }
+
+.center{
+  text-align: center;
+}
+
 </style>

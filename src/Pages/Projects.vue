@@ -93,7 +93,7 @@ const hobbyProjects = [
   {
     title: "Fire and flesh",
     description:
-      "Website for sharing recipes. Has been taken offline due to cost. But it was a fun project where i learned a lot",
+      "Website for sharing recipes. Has been taken offline due to cost. But it was a fun CRUD project where i learned a lot",
     tech: "Laravel and Vue",
     published: false,
     image: fireAndFlesh,
@@ -124,7 +124,7 @@ const hobbyProjects = [
   {
     title: "Portofolio",
     description:
-      "Making a portofolio for myself. Making it by using vuetify 3. A fun hobby project for sure",
+      "Making a portofolio for myself. Making it by using vuetify 3. A fun hobby project where i learned to use vuetify",
     tech: "Vue.js",
     published: false,
     image: portoImage,

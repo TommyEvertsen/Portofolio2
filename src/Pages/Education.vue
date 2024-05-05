@@ -2,8 +2,8 @@
   <main>
     <v-container class="px-10 mt-10 mb-10">
       <v-row class="mt10">
-        <v-col cols="12" xl="4" lg="6" md="6" sm="12" xs="12">
-          <h2 class="headline">Study at the University</h2>
+        <v-col cols="12" xl="4" lg="6" md="12" sm="12" xs="12">
+          <h1 class="headline">Study at the University</h1>
           <div class="mt-10 uni-text">
             <p style="font-size: large; line-height: 2em">
               I studied professional front-end development program at the
@@ -29,7 +29,7 @@
         </v-col>
 
         <v-col>
-          <v-img :src="diploma"> </v-img>
+          <v-img max-height="630" :src="diploma"> </v-img>
         </v-col>
       </v-row>
 

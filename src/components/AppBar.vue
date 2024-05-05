@@ -4,9 +4,7 @@
       <v-app-bar-nav-icon @click="show"></v-app-bar-nav-icon>
     </template>
 
-    <v-app-bar-title
-      >{{ $route.meta.title || "Default title" }}
-    </v-app-bar-title>
+    <v-app-bar-title>{{ $route.meta.title || "Home" }} </v-app-bar-title>
   </v-app-bar>
 
   <v-navigation-drawer width="220" v-if="drawer" v-model="drawer">

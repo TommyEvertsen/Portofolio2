@@ -3,7 +3,7 @@
     <v-container class="px-10 mt-10 mb-10">
       <v-row>
         <v-col class="pa-2" cols="12" xl="5" lg="6" md="6" sm="12" xs="12">
-          <h1 class="contact center">Stay in touch</h1>
+          <h1 class="contact center">Contact me</h1>
           <div class="mt-10">
             <p style="font-size: large; line-height: 2em">
               Good {{ time }} welcome to my contact page, feel free to contact
@@ -14,7 +14,7 @@
               <br> <br>
 
               <p>
-                Right now it's {{ time }} so i am probably {{ activity }} but i will answer as soon as i can. 
+                Right now it's {{ time }} time so i am probably {{ activity }} but i will answer as soon as i can. 
               </p> <br>
 
               <p> Have a good {{ time }}</p>

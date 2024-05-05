@@ -53,7 +53,14 @@
           </div>
         </v-col>
         <v-col class="pa-2">
-          
+          <v-img
+          src="@/assets/images/tommyAvatar.jpg"
+            class="rounded-lg mx-auto"
+            max-height="500"
+            max-width="900"
+          >
+            
+          </v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -104,8 +111,12 @@ const activity = currentActivity;
   opacity: 80%;
 }
 
-.center{
+
+
+@media screen and (max-width: 768px) {
+  .center{
   text-align: center;
+}
 }
 
 </style>

@@ -5,7 +5,7 @@
         <v-col cols="12" xl="5" lg="5" md="12" sm="12" xs="12" class="mt-10">
           <v-sheet class="centerHome">
             <h3>Hi there i'm</h3>
-            <h1 class="mt-2">Tommy Evertsen</h1>
+            <h1 class="mt-2" style="color: #5b8fb9">Tommy Evertsen</h1>
             <v-divider length="300" thickness="2"> </v-divider>
             <h2>Fullstack developer</h2>
             <p
@@ -109,6 +109,10 @@ const technologies = [
   },
   {
     title: "Azure",
+    color: "#85C1E9 ",
+  },
+  {
+    title: "SQL",
     color: "#85C1E9 ",
   },
 ];

@@ -32,12 +32,25 @@
           <v-img :src="diploma"> </v-img>
         </v-col>
       </v-row>
+
+      <v-container class="mt-10 mb-10">
+        <h2 class="text-center">My coding journey</h2>
+      </v-container>
+
+      <TimeLine v-if="smAndUp" />
+      <TimeLineMobile v-if="smAndDown" />
     </v-container>
   </main>
 </template>
 
 <script setup>
 import diploma from "@/assets/images/diploma.jpg";
+import TimeLine from "@/components/TimeLine.vue";
+import TimeLineMobile from "@/components/TimeLineMobile.vue";
+import { useDisplay } from "vuetify";
+
+const { smAndUp } = useDisplay();
+const { smAndDown } = useDisplay();
 </script>
 
 <style>

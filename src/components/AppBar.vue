@@ -21,7 +21,7 @@
 
     <v-divider></v-divider>
 
-    <v-list active-color="#6495ED" density="compact" nav>
+    <v-list color="#6495ED" density="compact" nav>
       <v-list-item
         prepend-icon="mdi-home-outline"
         title="Home"

@@ -8,9 +8,7 @@
               <h1 class="text-h4 font-weight-black headlineMe">About me</h1>
 
               <div class="text-body-2 mt-8 about-me-text">
-                <p style="font-size: large">
-                  My name is Tommy Evertsen and i work as a fullstack developer.
-                </p>
+                <p style="font-size: large">My name is Tommy Evertsen.</p>
 
                 <p class="pt-5" style="font-size: large">
                   I started programming as a hobby with friends. I found out i
@@ -47,7 +45,7 @@
         </v-col>
         <v-col class="pa-2" cols="12" md="6" sm="12" xs="12">
           <v-img
-            src="@/assets/images/tommyAvatar.jpg"
+            src="@/assets/onthehand.jpg"
             class="rounded-lg mx-auto"
             max-height="500"
             max-width="900"
@@ -56,11 +54,14 @@
       </v-row>
 
       <v-container class="mt-10 mb-10">
-        <h2 class="text-center">My coding journey</h2>
-      </v-container>
+        <v-row>
+          <v-col cols="12" md="4" sm="12" xs="12"> </v-col>
 
-      <TimeLine v-if="smAndUp" />
-      <TimeLineMobile v-if="smAndDown" />
+          <v-col cols="12" md="4" sm="12" xs="12"> </v-col>
+
+          <v-col cols="12" md="4" sm="12" xs="12"> </v-col>
+        </v-row>
+      </v-container>
     </v-container>
   </main>
 </template>

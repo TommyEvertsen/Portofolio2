@@ -16,56 +16,56 @@ const router = createRouter({
       name: "home",
       component: Home,
       meta: {
-        title: 'Home'
-      }
+        title: "Home",
+      },
     },
     {
       path: "/about",
       name: "about",
       component: AboutMe,
       meta: {
-        title: 'About me'
-      }
+        title: "About me",
+      },
     },
     {
       path: "/certificates",
       name: "certificates",
       component: Certificates,
       meta: {
-        title: 'Certificates'
-      }
+        title: "Certificates",
+      },
     },
     {
       path: "/videogames",
       name: "video-games",
       component: VideoGames,
       meta: {
-        title: 'Videogames'
-      }
+        title: "Videogames",
+      },
     },
     {
       path: "/projects",
       name: "projects",
       component: Projects,
       meta: {
-        title: 'Projects'
-      }
+        title: "Projects",
+      },
     },
     {
       path: "/education",
       name: "education",
       component: Education,
       meta: {
-        title: 'Education'
-      }
+        title: "Education",
+      },
     },
     {
       path: "/contact",
       name: "contact",
       component: ContactMe,
       meta: {
-        title: 'Contact me'
-      }
+        title: "Contact me",
+      },
     },
   ],
 });

@@ -24,7 +24,7 @@
               <br />
               I also like to constantly learn new technologies and enjoy
               studying new things. I feel like learning is really fun and i
-              enjoy it alot
+              enjoy it alot.
 
               <br />
               <br />

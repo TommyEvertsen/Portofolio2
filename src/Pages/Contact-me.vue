@@ -111,8 +111,6 @@ const activity = currentActivity;
   opacity: 80%;
 }
 
-
-
 @media screen and (max-width: 768px) {
   .center{
   text-align: center;

@@ -35,11 +35,11 @@
                 <br />
 
                 <p class="pt-5" style="font-size: large">
-                  Last but not least i enjoy programming. I love programming and
-                  learning about programing. It feels like an endless pool of
-                  new subjects to learn which i love. I love to do web
-                  development and also videogame development. I am having a ton
-                  of fun when i do programming.
+                  Last but not least i love programming and learning about
+                  programming. It feels like an endless pool of new subjects to
+                  learn which i love. I love to do web development and also
+                  videogame development. I am having a ton of fun when i do
+                  programming.
                 </p>
 
                 <p class="pt-5" style="font-size: large">

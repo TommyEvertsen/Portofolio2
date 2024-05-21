@@ -8,51 +8,36 @@
             <h1 class="mt-2" style="color: #5b8fb9">Tommy Evertsen</h1>
             <v-divider length="300" thickness="2"> </v-divider>
             <h2>Fullstack developer</h2>
-            <p
-              class="mt-10"
-              style="font-size: large; line-height: 1, 2rem; text-align: left"
-            >
-              I do web development and game development, i enjoy both of them
-              alot. <br />
+            <p class="mt-10" style="font-size: large; line-height: 1, 2rem; text-align: left">
+              I am a web and game developer with a passion for both fields. <br />
               <br />
-              My daytime job is fullstack developer. I have made websites and
-              apps for many diffrent clients. In my spare time i enjoy creating
-              video games in C# and Unity. I have also studied Azure and taken
-              two certifications. Azure fundamentals and Azure developer
-              associate as i believe the future is in the cloud.
+              Professionally, I work as a full-stack developer, where I have developed websites and applications for a
+              diverse range of clients. In my spare time, I create video games using C# and Unity. Additionally, I have
+              studied Microsoft Azure extensively and hold two certifications: Azure Fundamentals and Azure Developer
+              Associate, as I firmly believe that the future of technology lies in cloud computing.
               <br />
               <br />
-              I also like to constantly learn new technologies and enjoy
-              studying new things. I feel like learning is really fun and i
-              enjoy it alot.
+              I am committed to continuous learning and take pleasure in exploring new technologies and concepts. I find
+              the process of learning both enjoyable and fulfilling.
 
               <br />
               <br />
-              Please fell free to contact me if you have any questions.
+              Please feel free to contact me if you have any questions.
             </p>
             <p class="mt-10" style="font-weight: bold; font-size: larger">
               My technologies:
             </p>
 
             <v-chip-group column class="mt-5">
-              <v-chip
-                v-for="technology in technologies"
-                style="color: #ffff; background-color: #5b8fb9"
-                variant="outlined"
-              >
+              <v-chip v-for="technology in technologies" style="color: #ffff; background-color: #5b8fb9"
+                variant="outlined">
                 {{ technology.title }}
               </v-chip>
             </v-chip-group>
 
-            <v-btn
-              class="button mt-10"
-              variant="outlined"
-              prepend-icon="mdi-web"
-              color="#5B8FB9"
-              @click="$router.push({ name: 'contact' })"
-            >
-              Contact me</v-btn
-            >
+            <v-btn class="button mt-10" variant="outlined" prepend-icon="mdi-web" color="#5B8FB9"
+              @click="$router.push({ name: 'contact' })">
+              Contact me</v-btn>
           </v-sheet>
         </v-col>
 

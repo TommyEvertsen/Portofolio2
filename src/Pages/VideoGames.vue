@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>VG</h1>
+    <h1>Video Games</h1>
   </div>
 </template>
 

@@ -6,21 +6,22 @@
           <h1 class="contact center">Contact me</h1>
           <div class="mt-10">
             <p style="font-size: large; line-height: 2em">
-              Good {{ time }} welcome to my contact page, feel free to contact
-              me. If you want to send me an email please use the address below.
-              If you are curious about my coding projects then visit my
-              github profile, link below. If you want to visit my linkin profile
-              there is link to that aswell.
+              Good {{ time }} Welcome to my contact page. Please feel free to reach out to me using the email address
+              provided below.
+
+              If you are interested in exploring my coding projects, you can visit my GitHub profile through the link
+              provided. Additionally, a link to my LinkedIn profile is available if you wish to learn more about my
+              professional background.
               <br> <br>
 
-              <p>
-                Right now it's {{ time }} time so i am probably {{ activity }} but i will answer as soon as i can. 
-              </p> <br>
+            <p>
+              Right now it's {{ time }} time so i am probably {{ activity }} but i will answer as soon as i can.
+            </p> <br>
 
-              <p> Have a good {{ time }}</p>
+            <p> Have a good {{ time }}</p>
 
             </p>
-          
+
             <h2 class="mt-10">Contact information</h2>
 
             <p class="mt-10" style="font-size: large; line-height: 2em">
@@ -34,32 +35,16 @@
             <h3 class="mt-10">Stay in touch!</h3>
 
             <div class="mt-10">
-              <v-btn
-                href="https://www.linkedin.com/in/tommy-evertsen/"
-                color="#5B8FB9"
-                density="comfortable"
-                class="button mr-2"
-                icon="mdi-linkedin"
-                hover
-              ></v-btn>
-              <v-btn
-                href="https://github.com/TommyEvertsen"
-                color="#5B8FB9"
-                density="comfortable"
-                class="button mx-2"
-                icon="mdi-github"
-              ></v-btn>
+              <v-btn href="https://www.linkedin.com/in/tommy-evertsen/" color="#5B8FB9" density="comfortable"
+                class="button mr-2" icon="mdi-linkedin" hover></v-btn>
+              <v-btn href="https://github.com/TommyEvertsen" color="#5B8FB9" density="comfortable" class="button mx-2"
+                icon="mdi-github"></v-btn>
             </div>
           </div>
         </v-col>
         <v-col class="pa-2">
-          <v-img
-          src="@/assets/images/tommyAvatar.jpg"
-            class="rounded-lg mx-auto"
-            max-height="500"
-            max-width="900"
-          >
-            
+          <v-img src="@/assets/images/tommyAvatar.jpg" class="rounded-lg mx-auto" max-height="500" max-width="900">
+
           </v-img>
         </v-col>
       </v-row>
@@ -112,9 +97,8 @@ const activity = currentActivity;
 }
 
 @media screen and (max-width: 768px) {
-  .center{
-  text-align: center;
+  .center {
+    text-align: center;
+  }
 }
-}
-
 </style>

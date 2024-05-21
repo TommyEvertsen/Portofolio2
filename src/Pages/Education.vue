@@ -6,24 +6,22 @@
           <h1 class="headline">Study at the University</h1>
           <div class="mt-10 uni-text">
             <p style="font-size: large; line-height: 2em">
-              I studied professional front-end development program at the
-              University of California. The program consisted of 5 courses with
-              a duration of 3 months each course. This program made me really
-              understand the logical aspects of programming as well as designing
-              web pages for easy use, and how to make them available for people
-              who have challenges with their eye sight and other disablilites.
+              I completed a professional front-end development program at the University of California, which consisted
+              of five courses, each with a duration of three months. This comprehensive program provided me with a deep
+              understanding of the logical aspects of programming and the principles of designing user-friendly web
+              pages. It also emphasized accessibility, teaching us how to create web content that is accessible to
+              individuals with visual impairments and other disabilities.
             </p>
             <br />
             <p style="font-size: large; line-height: 2em">
-              The students worked together in teams to simulate real world
-              working environments. We made web pages together and helped
-              eachother and also came up with ideas to to to improve eachother.
-              The teachers where also really helpul in lending us help with
-              their expertice in the field. We had discussions about our code
-              with them on how we faced the challenges and got tips for more
-              effecient code from them. I had a great time doing this program
-              and can recommend it to anyone interested in programming and
-              designing web pages.
+              Throughout the program, students collaborated in teams to simulate real-world working environments. We
+              collectively developed web pages, supported each other, and brainstormed ideas for mutual improvement. The
+              instructors were exceptionally helpful, offering their expertise to assist us with our projects. We
+              engaged in discussions about our code, addressing challenges we encountered, and received valuable tips
+              for writing more efficient code.
+
+              I thoroughly enjoyed this program and highly recommend it to anyone interested in programming and web
+              design.
             </p>
           </div>
         </v-col>

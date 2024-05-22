@@ -15,7 +15,7 @@
               <br> <br>
 
             <p>
-              Right now it's {{ time }} time so i am probably {{ activity }} but i will answer as soon as i can.
+              Right now it's {{ time }}{{ add }} so i am probably {{ activity }} but i will answer as soon as i can.
             </p> <br>
 
             <p> Have a good {{ time }}</p>
@@ -57,13 +57,14 @@ import { ref, onMounted } from "vue";
 
 const currentTime = ref("");
 const currentActivity = ref("");
+const addTime = ref("");
 
 onMounted(() => {
   const now = new Date();
   const hour = now.getHours();
 
   if (hour >= 22 || hour < 5) {
-    currentTime.value = " night";
+    currentTime.value = "night";
     currentActivity.value = " sleeping";
   } else if (hour >= 6 && hour < 10) {
     currentTime.value = " morning";
@@ -71,6 +72,7 @@ onMounted(() => {
   } else if (hour >= 11 && hour < 18) {
     currentTime.value = " day";
     currentActivity.value = "at work";
+    addTime.value = "time";
   } else {
     currentTime.value = " evening";
     currentActivity.value = "enjoying a hobby activity";
@@ -79,6 +81,7 @@ onMounted(() => {
 
 const time = currentTime;
 const activity = currentActivity;
+const add = addTime;
 </script>
 
 <style>

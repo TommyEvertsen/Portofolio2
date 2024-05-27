@@ -10,6 +10,8 @@ import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  /* For deployment
+  history: createWebHistory(process.env.NODE_ENV === "production" ? "/Portofolio/" : "/"), */
   routes: [
     {
       path: "/",
@@ -68,6 +70,13 @@ const router = createRouter({
       },
     },
   ],
+ /*  For deployment
+  {
+    path: "/Portofolio/",
+    redirect: "/",
+  },
+], */
+
 });
 
 export default router;

@@ -1,0 +1,8 @@
+Merge changes in main branch
+
+then
+
+git checkout -b dist
+
+git subtree push --prefix dist origin gh-pages
+

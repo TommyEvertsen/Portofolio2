@@ -60,6 +60,12 @@ const years = [
     title: "Got a job as Fullstack developer at Hjelseth Computers",
     text: "My dream came true, to work as a devloper. I feel very happy to be part of this great ever evolving thing",
   },
+  {
+    color: "#5B8FB9",
+    year: "2024",
+    title: "Got a job as Senior software engineer at Geological study of Norway",
+    text: "Moved to a new city and got a exiting job at a wonderful company",
+  },
 ];
 </script>
 

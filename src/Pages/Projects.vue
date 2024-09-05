@@ -50,7 +50,7 @@ const hobbyProjects = [
   {
     title: "Dragon hero",
     description:
-      "Unity game. Recently started work on this. Its a fun hobby project using C# and Unity",
+      "I recently began working on a Unity game as a hobby project. It involves using C# and the Unity engine, and has been a fun and engaging experience so far.",
     tech: "C# and Unity",
     published: true,
     image: dragon,
@@ -60,7 +60,7 @@ const hobbyProjects = [
   {
     title: "Fire and flesh",
     description:
-      "Website for sharing recipes. Has been taken offline due to cost. But it was a fun CRUD project where i learned a lot",
+      "I created a recipe-sharing website, now offline due to costs. It was a fun CRUD project where I learned a lot.",
     tech: "Laravel and Vue",
     published: false,
     image: fireAndFlesh,
@@ -91,7 +91,7 @@ const hobbyProjects = [
   {
     title: "Portofolio",
     description:
-      "Making a portofolio for myself. Making it by using vuetify 3. A fun hobby project where i learned to use vuetify",
+      "I'm creating a personal portfolio using Vuetify 3. It's been a fun hobby project where I've learned to work with Vuetify.",
     tech: "Vue.js",
     published: false,
     image: portoImage,

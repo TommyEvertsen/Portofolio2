@@ -43,6 +43,10 @@ const years = [
         year: "2023",
         title: "Got a job as Fullstack developer at Hjelseth Computers",
     },
+    {
+        year: "2024",
+        title: "Got a job as Senior software engineer at Geological study of Norway",
+    },
 ];
 </script>
 

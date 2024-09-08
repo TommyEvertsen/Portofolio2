@@ -64,7 +64,7 @@ const years = [
     color: "#5B8FB9",
     year: "2024",
     title: "Got a job as Senior software engineer at Geological study of Norway",
-    text: "Moved to a new city and got a exiting job at a wonderful company",
+    text: "Moved to a new city and got an exiting job at a wonderful company",
   },
 ];
 </script>

@@ -9,6 +9,8 @@
         :key="link.title"
         :icon="link.icon"
         :href="link.href"
+        :target="link.href ? '_blank' : undefined"
+        :rel="link.href ? 'noopener noreferrer' : undefined"
         @click="link.click"
         class="mx-4"
         variant="text"
@@ -27,30 +29,45 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const navigateToCertificates = () => {
-  router.push({ name: "certificates" });
+  router.push({ name: "certificates" }).then(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 };
 
 const navigateToAboutMe = () => {
-  router.push({ name: "about" });
+  router.push({ name: "about" }).then(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 };
 
 const navigateToHome = () => {
-  router.push({ name: "home" });
+  router.push({ name: "home" }).then(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 };
 
 const navigateToGames = () => {
-  router.push({ name: "video-games" });
+  router.push({ name: "video-games" }).then(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 };
 
 const navigateToProjects = () => {
-  router.push({ name: "projects" });
+  router.push({ name: "projects" }).then(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 };
 
 const navigateToEducation = () => {
-  router.push({ name: "education" });
+  router.push({ name: "education" }).then(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 };
+
 const navigateToContact = () => {
-  router.push({ name: "contact" });
+  router.push({ name: "contact" }).then(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 };
 
 const links = [
@@ -70,14 +87,14 @@ const links = [
     click: navigateToContact,
   },
   {
-    title: "Projects",
-    icon: "mdi-application-braces-outline",
-    click: navigateToProjects,
-  },
-  {
     title: "Education",
     icon: "mdi-school-outline",
     click: navigateToEducation,
+  },
+  {
+    title: "Projects",
+    icon: "mdi-application-braces-outline",
+    click: navigateToProjects,
   },
   {
     title: "Certificates",
@@ -97,6 +114,4 @@ const links = [
 ];
 </script>
 
-<style>
-
-</style>
+<style></style>

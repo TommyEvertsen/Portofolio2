@@ -1,0 +1,12 @@
+Merge changes in main branch
+
+then
+
+git checkout -b dist
+remove /dist from gitignore
+npm run build
+git add .
+git commit -m 
+
+git subtree push --prefix dist origin gh-pages
+
